@@ -37,6 +37,9 @@
     <Filter Include="src\Classes\application\Shooting">
       <UniqueIdentifier>{1d44a5bc-ceb4-4443-be67-d63bb4b1541d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Classes\application\LifeGame2">
+      <UniqueIdentifier>{0297acf6-f710-4b70-a3a1-71bf0074a1d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\application\Shooting\ShootingCollider.cpp">
       <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\LifeGame2\LifeGame2Scene.cpp">
+      <Filter>src\Classes\application\LifeGame2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +193,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\application\Shooting\ShootingCollider.h">
       <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\LifeGame2\LifeGame2Scene.h">
+      <Filter>src\Classes\application\LifeGame2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

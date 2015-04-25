@@ -22,6 +22,7 @@ enum MENU {
 	MENU_LIFE_GAME,
 	MENU_SHOOTING,
 	MENU_KAWAMOTO,
+	MENU_LIFE_GAME2,
 
 	MENU_MAX
 };
@@ -32,7 +33,8 @@ static const char *const MENU_NAME[ MENU_MAX ] = {
 	"HelloWorld",
 	"LifeGame",
 	"Shooting",
-	"Kawamoto"
+	"Kawamoto",
+	"LifeGame2"
 };
 
 // メニュー処理
@@ -41,7 +43,8 @@ std::function<void(void)> MENU_FUNC[ MENU_MAX ] = {
 	[]{ GameManager::getInstance()->pushScene( CreateScene( SceneID::HELLO_WORLD ) ); },
 	[]{ GameManager::getInstance()->pushScene( CreateScene( SceneID::LIFE_GAME ) ); },
 	[]{ GameManager::getInstance()->pushScene( CreateScene( SceneID::SHOOTING ) ); },
-	[]{ CCLOG("Kawamoto Debug"); }
+	[]{ CCLOG("Kawamoto Debug"); },
+	[]{ GameManager::getInstance()->pushScene(CreateScene(SceneID::LIFE_GAME2)); }
 };
 
 DebugScene::DebugScene() :

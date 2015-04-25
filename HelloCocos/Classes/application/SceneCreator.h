@@ -12,6 +12,7 @@ public:
 		HELLO_WORLD,
 		LIFE_GAME,
 		SHOOTING,
+		LIFE_GAME2,
 
 #ifndef NDEBUG
 		DEBUG
